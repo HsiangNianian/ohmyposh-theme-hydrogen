@@ -76,18 +76,18 @@
             "type": "prompt"
         },
         {
-      "alignment": "left",
-      "newline": true,
-      "segments": [
-        {
-          "foreground": "lightBlue",
-          "style": "plain",
-          "template": "<{{ if .Root }}lightBlue{{ else }}green{{ end }}>\u2514\u2500</>{{ if .Root }}<lightRed>#</>{{ else }}${{ end }} ",
-          "type": "text"
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "foreground": "lightBlue",
+                    "style": "plain",
+                    "template": "<{{ if .Root }}lightBlue{{ else }}green{{ end }}>\u2514\u2500</>{{ if .Root }}<lightRed>#</>{{ else }}${{ end }} ",
+                    "type": "text"
+                }
+            ],
+            "type": "prompt"
         }
-      ],
-      "type": "prompt"
-    }
     ],
     "version": 2
 }
