@@ -11,6 +11,20 @@
                     "type": "text"
                 },
                 {
+                    "type": "shell",
+                    "style": "plain",
+                    "foreground": "#cacaca",
+                    "properties": {
+                        "mapped_shell_names": {
+                            "pwsh": "Pwsh",
+                            "powershell": "Shell",
+                            "cmd": "Cmd",
+                            "bash": "Bash"
+                        }
+                    },
+                    "template": " [{{ .Name }}]"
+                },
+                {
                     "foreground": "#56B6C2",
                     "properties": {
                         "style": "folder"
@@ -22,8 +36,8 @@
                 {
                     "foreground": "#D0666F",
                     "properties": {
-                        "branch_icon": "",
-                        "fetch_status": false
+                        "branch_icon": "❄️  ",
+                        "fetch_status": true
                     },
                     "style": "plain",
                     "template": "<#5FAAE8>git:(</>{{ .HEAD }}<#5FAAE8>)</>",
@@ -32,7 +46,7 @@
                 {
                     "foreground": "#DCB977",
                     "style": "plain",
-                    "template": " \uf119",
+                    "template": ":(",
                     "type": "status"
                 },
                 {
@@ -69,7 +83,7 @@
                         "always_enabled": true
                     },
                     "style": "plain",
-                    "template": " {{ if gt .Code 0 }}\uea76{{else}}\uf42e{{ end }} ",
+                    "template": " {{ if gt .Code 0 }}✖{{else}}✔{{ end }} ",
                     "type": "status"
                 }
             ],
