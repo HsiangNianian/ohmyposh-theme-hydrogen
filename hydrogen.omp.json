@@ -76,34 +76,6 @@
             "type": "prompt"
         },
         {
-            "alignment": "right",
-            "segments": [
-                {
-                    "foreground": "white",
-                    "properties": {
-                        "always_enabled": true,
-                        "style": "round"
-                    },
-                    "style": "plain",
-                    "template": " {{ .FormattedMs }} ",
-                    "type": "executiontime"
-                },
-                {
-                    "foreground": "green",
-                    "foreground_templates": [
-                        "{{ if gt .Code 0 }}red{{ end }}"
-                    ],
-                    "properties": {
-                        "always_enabled": true
-                    },
-                    "style": "plain",
-                    "template": " {{ if gt .Code 0 }}\uea76{{else}}\uf42e{{ end }} ",
-                    "type": "status"
-                }
-            ],
-            "type": "prompt"
-        },
-        {
       "alignment": "left",
       "newline": true,
       "segments": [
